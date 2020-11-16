@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Secondpage">
+
+
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/images" />
+
+        <ImageView
+            android:id="@+id/poster"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/poster" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_below="@id/poster"
+            android:background="@color/black" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView3"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="10dp"
+            android:text="Name "
+            android:textColor="@android:color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/namefield"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView4"
+            android:hint="Your Name" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/namefield"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="10dp"
+            android:text="Address "
+            android:textColor="@android:color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/namefield2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView5"
+            android:hint="Your Address" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/namefield2"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="10dp"
+            android:text="Order "
+            android:textColor="@android:color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView6"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/pizza"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="13dp"
+                android:layout_weight="1"
+                android:text="PIZZA"
+                android:textSize="20sp"
+                android:onClick="Pizza"></Button>
+
+            <Button
+                android:id="@+id/burger"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="13dp"
+                android:layout_weight="1"
+                android:text="BURGER"
+                android:textSize="20sp"
+                android:onClick="Burger"></Button>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linear1"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/coffee"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="13dp"
+                android:layout_weight="1"
+                android:text="COFFEE"
+                android:textSize="20sp"
+                android:onClick="Coffee"></Button>
+
+            <Button
+                android:id="@+id/tea"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="13dp"
+                android:layout_weight="1"
+                android:text="TEA"
+                android:textSize="20sp"
+                android:onClick="Tea"
+                ></Button>
+        </LinearLayout>
+    <Button
+        android:id="@+id/onClick"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear2"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_centerHorizontal="true"
+        android:text="BOOK ORDER"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:onClick="onClick"></Button>
+
+
+</RelativeLayout>
